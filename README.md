@@ -1,3 +1,6 @@
+## NAME:SHYAM SUJIN U
+## REG NO.212223040201
+
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
@@ -49,13 +52,44 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+```
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+\Half Adder
+module halfadd_top(a,b,sum,carry);
+input a,b;
+output sum,carry; 
+ assign sum = a^b;
+ assign carry = a & b;
+endmodule
+\Half Subracter
+module halfsub_top(a,b,D,Bo);
+input a,b;
+output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
+assign D = a ^ b;
+  assign Bo = ~a & b;
+endmodule
 
-Developed by: RegisterNumber:*/
+Developed by:SHYAM SUJIN U
+RegisterNumber:212223040201
+```
+*/
 
 **RTL Schematic**
-
+Half Adder
+![image](https://github.com/KishanShreeB/HALF_ADDER_SUBTRACTOR/assets/144870434/25087f1b-f3e2-4f5c-928b-a3efe80e8b00)
+Half Subracter
+![image](https://github.com/KishanShreeB/HALF_ADDER_SUBTRACTOR/assets/144870434/ff2bfd35-9cc1-4469-9ef0-98512f4a6d32)
 **Output/TIMING Waveform**
+Half adder
+![image](https://github.com/KishanShreeB/HALF_ADDER_SUBTRACTOR/assets/144870434/c74a8865-f61d-496e-af8f-20cd4f3f928b)
+
+
+Half Subracter
+
+
+![image](https://github.com/KishanShreeB/HALF_ADDER_SUBTRACTOR/assets/144870434/d72d84ef-8990-4012-ac82-c03c3c642638)
+
 
 **Result:**
+The output of HALF_ADDER_SUBTRACTOR has been executed successfully.
